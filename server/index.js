@@ -9,9 +9,7 @@ const PORT = 5000
 
 import { uploadRouter } from './routes/upload.js'
 
-app.use(cors({
-  origin: 'https://manueltv-lteq.onrender.com/'
-}))
+app.use(cors())
 app.use(express.json())
 app.use(express.urlencoded())
 app.use(cookieParser())
